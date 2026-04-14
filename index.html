@@ -1,13 +1,108 @@
 <!DOCTYPE html>
-<html>
-<head>	
- <title> "My First Web-Page" </title>
-</head> 
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyam Chaudhury | Developer & Researcher</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1><center>HTML Assignment-1
-  <hr color = "red"><hr></center></h1>
-<p>This is my <b>first HTML</b> Assignment. I am excited to learn HTML, as I would love to pursue a career in <b>web-designing</b></p>
-<h2><center></h2>
-<p>HTML <i> (Hyper-Text Markup Language) </i> is used to create document on the <u>World-Wide-Web</u>. It is simply a collection of keywords called <i>'Tags' that are helpful in writing the document to be displayed on the browser on the internet.</i> It was developed by <b> Tim-Berner's Lee </b> in 1992.
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">PC_</a>
+      <ul class="nav-links">
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#snippets">Snippets</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <h1 class="hero-title"><span id="typewriter"></span><span class="cursor">_</span></h1>
+      <p class="hero-bio">
+        Exploring the intersections of <strong>Web Development</strong>, <strong>Crypto</strong>, and <strong>Cyber Security</strong>. Building tools, breaking systems, and documenting the journey.
+      </p>
+    </div>
+  </header>
+
+  <main class="container" id="articles">
+    <h2 class="section-heading">Latest Output</h2>
+    
+    <div class="blog-grid">
+      <article class="card">
+        <div class="card-header">
+          <div class="tags">
+            <span class="tag">Crypto</span>
+            <span class="tag">Web Dev</span>
+          </div>
+          <span class="read-time">5 min read</span>
+        </div>
+        <h3 class="card-title"><a href="#">Building a Bitcoin Address Lookup Tool from Scratch</a></h3>
+        <p class="card-excerpt">A deep dive into recovering wallets and querying blockchain ledgers using modern JavaScript and RPC nodes.</p>
+        <div class="card-footer">
+          <span class="date">Oct 24, 2025</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="tags">
+            <span class="tag">Cyber Security</span>
+          </div>
+          <span class="read-time">8 min read</span>
+        </div>
+        <h3 class="card-title"><a href="#">Understanding Modern Web Vulnerabilities</a></h3>
+        <p class="card-excerpt">An analysis of common attack vectors in modern frontend frameworks and how to securely mitigate them.</p>
+        <div class="card-footer">
+          <span class="date">Sep 12, 2025</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="tags">
+            <span class="tag">Physics</span>
+          </div>
+          <span class="read-time">6 min read</span>
+        </div>
+        <h3 class="card-title"><a href="#">Quantum Mechanics for Programmers</a></h3>
+        <p class="card-excerpt">Translating complex quantum states and probability amplitudes into mental models software engineers can understand.</p>
+        <div class="card-footer">
+          <span class="date">Aug 05, 2025</span>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+      <div class="newsletter">
+        <label for="email-input">Subscribe to the transmission</label>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" id="email-input" placeholder="Enter your email..." required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>	
+</html>
